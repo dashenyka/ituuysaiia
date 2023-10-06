@@ -42,5 +42,17 @@ if k>=1 and k<=8 and l>=1 and l<=8 and m>=1 and m<=8 and n>=1 and n<=8:
     else:
         print("Фигура не угрожает полю (m, n).")
 
+    massiv = []
+    for i in range(1, 9):
+        for j in range(1, 9):
+            if figura(figure, k, l, i, j) and figura(figure, i, j, m, n):
+                massiv.append((i, j))
+
+    if len(massiv) > 0:
+        print("Фигура может попасть на поле (m, n) за два хода с полями:")
+        for masssivv in massiv:
+            print(masssivv)
+    else:
+        print("Фигура не может попасть на поле (m, n) за два хода.")
 else:
         print("Недопустимые значения, введите числа от 1 до 8")
