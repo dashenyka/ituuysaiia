@@ -9,13 +9,17 @@
 Среда разработки: PyCharm
 ##### Скриншоты
 тест 1
+
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/2647d806-e719-4748-a949-73d2ff70ebb8)
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/28128f43-f264-46d1-8990-03d09e78b534)
 тест 2
+
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/2f6137b2-4c49-4952-9b39-52a7921f2946)
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/994fa650-cdd5-402f-bb11-ee7d82869d1a)
 тест 3
+
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/b8ea3e0b-b434-422a-8cd0-c8cc9f23c7af)
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/489877ab-c64a-4994-9945-d01ce0c1f83c)
 тест 4 (ввод недопустимых значений)
+
 ![image](https://github.com/dashenyka/ituuysaiia/assets/146252024/7a0e65ca-19a3-42bf-bea1-e83a11a706e2)
