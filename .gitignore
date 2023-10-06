@@ -7,15 +7,40 @@ def color(k, l, m, n):
     else:
         return False
 
+
+def figura(figure, k, l, m, n):
+    if figure == "ферзь":
+        if k == m or l == n or abs(k - m) == abs(l - n):
+            return True
+    elif figure == "ладья":
+        if k == m or l == n:
+            return True
+    elif figure == "слон":
+        if abs(k - m) == abs(l - n):
+            return True
+    elif figure == "конь":
+        if abs(k - m) == 1 and abs(l - n) == 2 or abs(k - m) == 2 and abs(l - n) == 1:
+            return True
+
+    return False
+
+
 k = int(input("Вертикаль для поля (k, l): "))
 l = int(input("Горизонталь для поля (k, l): "))
 m = int(input("Вертикаль для поля (m, n): "))
 n = int(input("Горизонталь для поля (m, n): "))
-if k >= 1 and k <= 8 and l >= 1 and l <= 8 and m >= 1 and m <= 8 and n >= 1 and n <= 8:
+if k>=1 and k<=8 and l>=1 and l<=8 and m>=1 and m<=8 and n>=1 and n<=8:
     if color(k, l, m, n):
         print("Поля (k, l) и (m, n) являются полями одного цвета.")
     else:
         print("Поля (k, l) и (m, n) являются полями разного цвета.")
 
+    figure = input("Введите одну из фигур: ферзь, ладья, слон или конь: ")
+
+    if figura(figure, k, l, m, n):
+        print("Фигура угрожает полю (m, n).")
+    else:
+        print("Фигура не угрожает полю (m, n).")
+
 else:
-    print("Недопустимые значения, введите числа от 1 до 8")
+        print("Недопустимые значения, введите числа от 1 до 8")
